@@ -22,6 +22,9 @@ class ResultActivity : AppCompatActivity() {
             binding.resultImage.setImageURI(it)
         }
 
+        val detextedText = intent.getStringExtra(EXTRA_RESULT)
+        binding.resultText.text = detextedText
+
     }
 
     companion object {
